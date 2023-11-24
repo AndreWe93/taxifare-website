@@ -38,7 +38,7 @@ if st.button("Predict Fare"):
 
     if response.status_code == 200:
         # Retrieve prediction from JSON response
-        prediction = response.json()["fare"]
+        prediction = response.json()["fare_amount"]
 
         # Display prediction to the user
         st.success(f'The predicted fare amount is: ${prediction:.2f}')
