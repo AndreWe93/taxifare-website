@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from datetime import datetime
+
 
 '''
 # NY Taxi Fare Predictor (by AW)
@@ -22,7 +22,7 @@ passenger_count = st.text_input("Passenger Count")
 
 
 if st.button("Predict Fare"):
-    url = 'https://taxifare.lewagon.ai/predict'
+    url = 'https://taxifare-z2kqlvo2ta-ew.a.run.app/predict'
 
     params = {
             'pickup_datetime': pickup_datetime,
